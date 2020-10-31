@@ -200,7 +200,7 @@ table {
   padding-bottom: 17px;
 }
 
-.photo img {
+.photo {
   display: block;
   width: 324px;
   height: 324px;
@@ -314,6 +314,10 @@ table {
 .icons {
   display: flex;
   justify-content: center;
+}
+
+.icon:hover svg path {
+  fill: #dbc1c1;
 }
 
 .df {
