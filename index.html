@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="all.css">
-
 </head>
 
 <body>
     <style>
-[data-aos] {
-   visibility: hidden;
-}
+        [data-aos] {
+            visibility: hidden;
+        }
 
-[data-aos].animate__animated {
-   visibility: visible;
-}
-
+        [data-aos].animate__animated {
+            visibility: visible;
+        }
     </style>
     <div class="wrap">
         <h1 class="name mb-48" data-aos="animate__rotateInDownLeft">Joanne<br>Chen</h1>
@@ -145,10 +143,9 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                                 <defs>
                                     <style>
-.a {
-   fill: #fff;
-}
-
+                                        .a {
+                                            fill: #fff;
+                                        }
                                     </style>
                                 </defs>
                                 <path class="a"
@@ -161,10 +158,9 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                                 <defs>
                                     <style>
-.a {
-   fill: #fff;
-}
-
+                                        .a {
+                                            fill: #fff;
+                                        }
                                     </style>
                                 </defs>
                                 <path class="a"
@@ -177,10 +173,9 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                                 <defs>
                                     <style>
-.a {
-   fill: #fff;
-}
-
+                                        .a {
+                                            fill: #fff;
+                                        }
                                     </style>
                                 </defs>
                                 <path class="a"
@@ -193,34 +188,34 @@
             </div>
         </div>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            // 1 . offset 去偵測是否符合條件
-            // 2.增加 class 進去
-            AOS.init({
-                // Global settings:
-                disable: false, // 關閉或打開特效 可以指定當使用者在用哪個工具個時候禁用 accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-                initClassName: false, // class applied after initialization 添加外部插件來進行視差滾動 這裡是來寫init 的 初始化class名
-                animatedClassName: 'animate__animated', // class applied on animation 添加外部插件來進行視差滾動 這裡是來寫animate 的主要名稱
-                useClassNames: true, //如果設為true 會在class裡面添加 data-aos 的值
-
-                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-                debounceDelay: 50, // 防抖 設定 主要設定當 resizing  毫秒內有調用resizing 不會執行 直到 大於毫秒數 才執行the delay on debounce used while resizing window (advanced)
-                throttleDelay: 50, // 節流 設定 主要設定在滾輪滾動後延遲多少毫秒才執行特效 the delay on throttle used while scrolling the page (advanced)
-
-                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-                offset: 120, // 底下留白必須要有多少才會觸發特效 offset (in px) from the original trigger point 可以設在80-150之間
-                delay: 50, //延遲觸發時間 0-3000ms
-                duration: 50, // 過程時間 from 0 to 3000, with step 50ms
-                easing: 'ease', // 選擇 'ease' 'ease in' 'ease out'default easing for AOS animations
-                once: true, // 是否只執行一次 
-                mirror: false, // 當scroll 超過 元素時 使動畫倒回 
-                anchorPlacement: 'top-bottom', // 滾動方向觸發動畫，預設由上到下
-
-            });
-        </script>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // 1 . offset 去偵測是否符合條件
+        // 2.增加 class 進去
+        AOS.init({
+            // Global settings:
+            disable: false, // 關閉或打開特效 可以指定當使用者在用哪個工具個時候禁用 accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: false, // class applied after initialization 添加外部插件來進行視差滾動 這裡是來寫init 的 初始化class名
+            animatedClassName: 'animate__animated', // class applied on animation 添加外部插件來進行視差滾動 這裡是來寫animate 的主要名稱
+            useClassNames: true, //如果設為true 會在class裡面添加 data-aos 的值
+
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // 防抖 設定 主要設定當 resizing  毫秒內有調用resizing 不會執行 直到 大於毫秒數 才執行the delay on debounce used while resizing window (advanced)
+            throttleDelay: 50, // 節流 設定 主要設定在滾輪滾動後延遲多少毫秒才執行特效 the delay on throttle used while scrolling the page (advanced)
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // 底下留白必須要有多少才會觸發特效 offset (in px) from the original trigger point 可以設在80-150之間
+            delay: 50, //延遲觸發時間 0-3000ms
+            duration: 50, // 過程時間 from 0 to 3000, with step 50ms
+            easing: 'ease', // 選擇 'ease' 'ease in' 'ease out'default easing for AOS animations
+            once: true, // 是否只執行一次 
+            mirror: false, // 當scroll 超過 元素時 使動畫倒回 
+            anchorPlacement: 'top-bottom', // 滾動方向觸發動畫，預設由上到下
+
+        });
+    </script>
 
 </body>
 
